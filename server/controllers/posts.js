@@ -8,9 +8,9 @@ const router = express.Router();
 export const getPosts = async (req, res) => { 
     try {
         const postMessages = await PostMessage.find();
-        //const count = await PostMessage.find().countDocuments();
+        const count = await PostMessage.count();
 
-        res.status(200).json(postMessages);         //count
+        res.status(200).json({postMessages, count});         //
     } catch (error) {
         res.status(404).json({ message: error.message });
     }

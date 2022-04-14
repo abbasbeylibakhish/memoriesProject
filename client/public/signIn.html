@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registor</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<style>
+    #submitBtn {
+        float: right;
+        margin-top: -40px;
+        margin-right: 1px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="firstName">Ad</label>
+                    <input type="text" id="firstName" name="firstName" class="form-control" placeholder="First Name">
+
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="LastName">Soyad</label>
+                    <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Last Name">
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1"
+                            placeholder="Confirm Password">
+                    </div>
+                </div>
+                <legend class="col-form-label col-md-2" style="padding-top:17px">Cinsi</legend>
+                <div class="col-md-4 form-group ">
+                    <!-- <label for="gridRadios">Cinsi</label> -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                            checked />
+                        <label class="form-check-label" for="gridRadios1">
+                            Male
+                        </label>
+                    </div>
+                    <div class="form-check fo">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
+                            value="option2" />
+                        <label class="form-check-label" for="gridRadios2">
+                            Female
+                        </label>
+                    </div>
+
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted"></small>
+
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label>Telefon</label>
+                    <input type="text" class="form-control" id="phone" aria-describedby="phonelHelp"
+                        placeholder="Your Phone">
+                    <small id="phoneHelp" class="form-text text-muted"></small>
+
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Sual</label>
+
+                    <select class="form-control">
+
+                        <option selected>Sexsiyyet vesiqenizin FIN-i</option>
+                        <option value="1">Itinizin adi</option>
+                        <option value="2">Pishiyinizin adi</option>
+                        <option value="3">Dogum tarixiniz</option>
+                    </select>
+
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Cavab</label>
+                        <input type="text" id="cavab" class="form-control" placeholder="Cavabinizi Daxil Edin">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button class="btn btn-primary " id="submitBtn">Tesdiq et</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="server.js"></script>
+    <script src="public"></script>
+</body>
+
+</html>
